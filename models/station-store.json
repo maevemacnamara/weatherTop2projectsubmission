@@ -1,0 +1,43 @@
+{
+  "stationCollection": [
+    {
+    "title": "Lucan",
+      "readings": [
+        {
+          "code": "x",
+          "temp": "x",
+          "windSpeed": "x",
+          "windDirection": "x",
+          "pressure": "x"
+        },
+        {
+          "code": "y",
+          "temp": "y",
+          "windSpeed": "y",
+          "windDirection": "y",
+          "pressure": "y"
+        }
+      ]
+    },
+    
+    {
+    "title": "Leixlip",
+      "readings": [
+        {
+          "code": "x",
+          "temp": "x",
+          "windSpeed": "x",
+          "windDirection": "x",
+          "pressure": "x"
+        },
+        {
+          "code": "y",
+          "temp": "y",
+          "windSpeed": "y",
+          "windDirection": "y",
+          "pressure": "y"
+        }
+      ]
+    }
+  ]
+}
