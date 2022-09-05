@@ -1,25 +1,16 @@
 "use strict";
 
 const logger = require("../utils/logger");
-
-const lucan = {
-  title: 'Lucan',
-  readings: [
-    {
-      code: '100',
-      temp: ,
-      
-      
-    }
-  ]
-}
+const lucan = require("../models/station-store.js");
 
 const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
     const viewData = {
       title: "WeatherTop Dashboard",
+      station: lucan
     };
+    logger.info('about to render', lucan);
     response.render("dashboard", viewData);
   },
 };
