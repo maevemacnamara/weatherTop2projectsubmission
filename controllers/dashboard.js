@@ -2,6 +2,18 @@
 
 const logger = require("../utils/logger");
 
+const lucan = {
+  title: 'Lucan',
+  readings: [
+    {
+      code: '100',
+      temp: ,
+      
+      
+    }
+  ]
+}
+
 const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
