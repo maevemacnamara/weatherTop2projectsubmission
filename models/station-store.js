@@ -17,6 +17,10 @@ const stationStore = {
       }
       return foundStation;
     },
+  
+  removeReading(id, readingId) {
+      const station = this.getStation(id);
+    }
 };
 
 module.exports = stationStore;
