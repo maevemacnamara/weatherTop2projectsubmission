@@ -2,7 +2,39 @@
 
 <section class="ui segment">
   <h2 class="ui header">
-    Lucan
+    {{title}}
   </h2>
-  {{> listreadings}}
-</section>
+  <table class="ui table">
+      <thead>
+        <tr>
+          <th>Weather Code</th>
+          <th>Temp</th>
+          <th>Wind Speed</th>
+          <th>Wind Direction</th>
+          <th>Pressure</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each readings}}
+          <tr>
+            <td>
+              {{code}}
+            </td>
+            <td>
+              {{temp}}
+            </td>
+            <td>
+              {{windSpeed}}
+            </td>
+            <td>
+              {{windDirection}}
+            </td>
+            <td>
+              {{pressure}}
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </section>
+{{/each}}

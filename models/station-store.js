@@ -22,4 +22,26 @@ const lucan = {
   ],
 };
 
-module.exports = lucan;
+const leixlip = {
+  title: 'Leixlip',
+  readings: [
+    {
+      code: '200',
+      temp: '10',
+      windSpeed:'28',
+      windDirection:'WSW',
+      pressure:'900',
+    },
+    {
+      code: '300',
+      temp: '18',
+      windSpeed:'05',
+      windDirection:'ENE',
+      pressure:'600',
+    },
+  ],
+};
+
+const stationCollection = [lucan, leixlip];
+
+module.exports = stationCollection;
