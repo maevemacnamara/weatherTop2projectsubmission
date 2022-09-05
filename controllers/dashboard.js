@@ -1,16 +1,16 @@
 "use strict";
 
 const logger = require("../utils/logger");
-const stationCollection = require("../models/station-store.js");
+const stationStore = require("../models/station-store.js");
 
 const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
     const viewData = {
       title: "Station Dashboard",
-      station: stationCollection,
+      station: stationStore.getAllStations(),
     };
-    logger.info('about to render', stationCollection);
+    logger.info('about to render', stationStore.getAllStations());
     response.render("dashboard", viewData);
   },
 };
