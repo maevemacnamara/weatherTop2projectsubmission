@@ -2,10 +2,9 @@
 
 const _ = require('lodash');
 
-
 const stationStore = {
 
-    stationCollection: require('./station-store.json').stationCollection,
+    stationCollection: require("./station-store.json").stationCollection,
       
     getAllStations(){
       return this.stationCollection;
