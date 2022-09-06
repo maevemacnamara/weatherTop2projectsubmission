@@ -36,6 +36,7 @@ addReading(request, response) {
     };
   stationStore.addReading(stationId, newReading);
   response.redirect('/station/' + stationId)
+  logger.debug('New Reading = ', newReading);
   },
 };
 
