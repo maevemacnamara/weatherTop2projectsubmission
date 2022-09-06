@@ -2,6 +2,7 @@
 
 const logger = require('../utils/logger');
 const stationStore = require('../models/station-store');
+const uuid = require('uuid');
 
 const station = {
   index(request, response) {
@@ -26,6 +27,7 @@ addReading(request, response) {
   const stationId = request.params.id;
   const station = stationStore.getStation(stationId);
   const newReading = {
+    id: uuid.v1(),
     code : request.body.code,
     temp : request.body.temp,
     windSpeed : request.body.windSpeed,
@@ -34,7 +36,7 @@ addReading(request, response) {
     };
   stationStore.addReading(stationId, newReading);
   response.redirect('/station/' + stationId)
-  }
+  },
 };
 
 module.exports = station;
