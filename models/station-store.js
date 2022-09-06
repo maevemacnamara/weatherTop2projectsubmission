@@ -21,6 +21,11 @@ const stationStore = {
   
   removeStation(id){
     _.remove(this.stationCollection, {id: id});
+  },
+  
+  addReading(id, reading) {
+    const station = this.getStation(id);
+    station.readings.push(reading);
   }
   
 };
