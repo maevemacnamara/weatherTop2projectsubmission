@@ -9,7 +9,7 @@ const stationStore = {
     collection: 'stationCollection',
       
     getAllStations(){
-      return this.store.findOneBy(this.collection);
+      return this.store.findAll(this.collection);
     },
 
     getStation(id) {

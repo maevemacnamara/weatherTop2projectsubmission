@@ -28,11 +28,11 @@ addReading(request, response) {
   const station = stationStore.getStation(stationId);
   const newReading = {
     id: uuid.v1(),
-    code : request.body.code,
-    temp : request.body.temp,
-    windSpeed : request.body.windSpeed,
-    windDirection : request.body.windDirection,
-    pressure : request.body.pressure,
+    code : Number(request.body.code),
+    temp : Number(request.body.temp),
+    windSpeed : Number(request.body.windSpeed),
+    windDirection : Number(request.body.windDirection),
+    pressure : Number(request.body.pressure),
     };
   stationStore.addReading(stationId, newReading);
   response.redirect('/station/' + stationId)
