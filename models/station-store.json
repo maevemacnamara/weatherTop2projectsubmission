@@ -19,14 +19,6 @@
           "windSpeed": "y",
           "windDirection": "y",
           "pressure": "y"
-        },
-        {
-          "id": "75f056f0-2e2b-11ed-b92e-91fe98670d47",
-          "code": 100,
-          "temp": "z",
-          "windSpeed": "z",
-          "windDirection": "z",
-          "pressure": "z"
         }
       ]
     },
