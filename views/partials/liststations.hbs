@@ -1,8 +1,31 @@
 {{#each station}}
   <section class="ui inverted segment">
-<!--     <h2 class="ui header">
-      {{title}}
-    </h2> -->
+
+<div class="ui inverted segment">
+    <div class="ui five column grid">
+        <div class="column">
+            <p>{{title}} <i class="big purple map marked alternate icon"></i></p>
+            <p>Lat: {{_station.latitude}}<br>Lng: {{_station.longitude}}</p>
+        </div>
+        <div class="column">
+            <p>Weather <i class="big red cloud sun icon"></i></p>
+            <p>{{code}}</p>
+        </div>
+        <div class="column">
+            <p>Temperature <i class="big blue temperature low icon"></i></p>
+            <p>{{temp}} C<br> {{_latestReading?.fahrenheit}} F</p>
+        </div>
+        <div class="column">
+            <p>Wind <i class="big green wind icon"></i></p>
+            <p>{{_latestReading?.beaufort}} bft<br>{{_latestReading?.compassDirection}}<br>
+                Feels like<br>{{_latestReading?.windChill}}</p>
+        </div>
+        <div class="column">
+            <p>Pressure <i class="big orange arrows alternate icon"></i></p>
+            <p>{{pressure}} hPa</p>
+        </div>
+    </div>
+</div>
     
     <div class="ui divider"></div>
     <a href="/station/{{id}}" class="ui icon button">
