@@ -7,7 +7,10 @@ const stationStore = {
 
     store: new JsonStore('./models/station-store.json', { stationCollection: [] }),
     collection: 'stationCollection',
-      
+     
+    getUserStations(userid) {
+      return this.store.find
+    }
     getAllStations(){
       return this.store.findAll(this.collection);
     },
