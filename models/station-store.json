@@ -19,6 +19,27 @@
       "id": "e0ae80d0-3046-11ed-a0c7-8313427405ef",
       "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
       "title": "Leixlip",
+      "readings": [
+        {
+          "id": "e72a81c0-3046-11ed-a0c7-8313427405ef",
+          "code": 600,
+          "temp": 700,
+          "windSpeed": 800,
+          "windDirection": 900,
+          "pressure": 1000
+        }
+      ]
+    },
+    {
+      "id": "80246200-3048-11ed-a0c7-8313427405ef",
+      "userid": "6dfb07a0-3048-11ed-a0c7-8313427405ef",
+      "title": "Lauren's Weather Station for Weather Loving",
+      "readings": []
+    },
+    {
+      "id": "8a398f40-3048-11ed-a0c7-8313427405ef",
+      "userid": "6dfb07a0-3048-11ed-a0c7-8313427405ef",
+      "title": "Lauren's Weather Station for Weather Loving - West",
       "readings": []
     }
   ]
