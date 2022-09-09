@@ -40,7 +40,24 @@
       "id": "8a398f40-3048-11ed-a0c7-8313427405ef",
       "userid": "6dfb07a0-3048-11ed-a0c7-8313427405ef",
       "title": "Lauren's Weather Station for Weather Loving - West",
-      "readings": []
+      "readings": [
+        {
+          "id": "a472d100-3048-11ed-a0c7-8313427405ef",
+          "code": 100,
+          "temp": 10,
+          "windSpeed": 20,
+          "windDirection": 1,
+          "pressure": 15
+        },
+        {
+          "id": "b3faa580-3048-11ed-a0c7-8313427405ef",
+          "code": 0,
+          "temp": 0,
+          "windSpeed": 0,
+          "windDirection": 6,
+          "pressure": 0
+        }
+      ]
     }
   ]
 }
