@@ -9,8 +9,9 @@ const stationStore = {
     collection: 'stationCollection',
      
     getUserStations(userid) {
-      return this.store.find
-    }
+      return this.store.findBy(this.collection, { userid: userid });
+    },
+  
     getAllStations(){
       return this.store.findAll(this.collection);
     },
