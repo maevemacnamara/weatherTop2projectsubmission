@@ -12,6 +12,14 @@
           "windSpeed": 300,
           "windDirection": 400,
           "pressure": 500
+        },
+        {
+          "id": "cd49d130-304f-11ed-8a76-59531fbdfab2",
+          "code": 0,
+          "temp": 0,
+          "windSpeed": 0,
+          "windDirection": 0,
+          "pressure": 0
         }
       ]
     },

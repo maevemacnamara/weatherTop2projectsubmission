@@ -7,7 +7,7 @@ const reading = {
   index (request, response) {
     const stationId = request.params.id;
     const readingId = request.params.readingid;
-    logger.debug('Editing Song ${songId} from Station ${stationId}');
+    logger.debug('Editing Reading ${readingId} from Station ${stationId}');
     const viewData = {
       title: "Edit Reading",
       station: stationStore.getStation(stationId),
@@ -18,7 +18,7 @@ const reading = {
   
   update(request, response){
     const stationId = request.params.id;
-    const readingId = request.params.readingId;
+    const readingId = request.params.readingid;
     const reading = stationStore.getReading(stationId, readingId)
     const newReading = {
       code: Number(request.body.code),
