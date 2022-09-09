@@ -7,7 +7,7 @@ const dashboard = require("./controllers/dashboard.js");
 const about = require("./controllers/about.js");
 const station = require('./controllers/station.js');
 const accounts = require('./controllers/accounts.js');
-const song = require("./controllers/reading.js");
+const reading = require("./controllers/reading.js");
 
 router.get('/', accounts.index);
 router.get('/login', accounts.login);
@@ -25,6 +25,7 @@ router.get('/dashboard/deletestation/:id', dashboard.deleteStation);
 
 router.post('/station/:id/addreading', station.addReading);
 router.post('/dashboard/addstation', dashboard.addStation);
-router.get("/reading/:id")
+router.get('/reading/:id/editreading/:readingid', reading.index);
+router.post('/reading/:id/updatereading/:readingid', reading.update);
 
 module.exports = router;
