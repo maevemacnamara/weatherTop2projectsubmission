@@ -3,8 +3,34 @@
 const logger = require("../utils/logger");
 const stationStore = require("../models/station-store");
 
-const readin = {
-  index (request.response) {
-    
-  }
-}
+const reading = {
+  index (request, response) {
+    const stationId = request.params.id;
+    const readingId = request.params.readingid;
+    logger.debug('Editing Song ${songId} from Station ${stationId}');
+    const viewData = {
+      title: "Edit Reading",
+      station: stationStore.getStation(stationId),
+      reading: stationStore.getReading(stationId, readingId),
+    };
+    response.render("reading", viewData);
+  },
+  
+  update(request, response){
+    const stationId = request.params.id;
+    const readingId = request.params.readingId;
+    const reading = stationStore.getReading(stationId, readingId)
+    const newReading = {
+      code: Number(request.body.code),
+      temp: Number(request.body.temp),
+      windSpeed: Number(request.body.windSpeed),
+      windDirection: Number(request.body.windDirection),
+      pressure: Number(request.body.pressure)
+    };
+    logger.debug('Updating Reading ${readingId} from Station ${stationId}');
+    stationStore.updateReading(reading, newReading);
+    response.redirect("/station/" + stationId);
+  }  
+};
+
+module.exports = reading;
