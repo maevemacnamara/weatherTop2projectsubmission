@@ -7,18 +7,18 @@
         {
           "id": "03",
           "code": 300,
-          "temp": "x",
-          "windSpeed": "x",
-          "windDirection": "x",
-          "pressure": "x"
+          "temp": 300,
+          "windSpeed": 300,
+          "windDirection": 300,
+          "pressure": 300
         },
         {
           "id": "04",
           "code": 400,
-          "temp": "y",
-          "windSpeed": "y",
-          "windDirection": "y",
-          "pressure": "y"
+          "temp": 400,
+          "windSpeed": 400,
+          "windDirection": 400,
+          "pressure": 400
         }
       ]
     },
@@ -28,19 +28,19 @@
       "readings": [
         {
           "id": "05",
-          "code": 100,
-          "temp": "x",
-          "windSpeed": "x",
-          "windDirection": "x",
-          "pressure": "x"
+          "code": 500,
+          "temp": 500,
+          "windSpeed": 500,
+          "windDirection": 500,
+          "pressure": 500
         },
         {
           "id": "06",
           "code": 400,
-          "temp": "y",
-          "windSpeed": "y",
-          "windDirection": "y",
-          "pressure": "y"
+          "temp": 400,
+          "windSpeed": 400,
+          "windDirection": 400,
+          "pressure": 400
         }
       ]
     }

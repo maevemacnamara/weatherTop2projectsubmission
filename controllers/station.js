@@ -34,9 +34,9 @@ addReading(request, response) {
     windDirection : Number(request.body.windDirection),
     pressure : Number(request.body.pressure),
     };
+  logger.debug('New Reading = ', newReading);
   stationStore.addReading(stationId, newReading);
   response.redirect('/station/' + stationId)
-  logger.debug('New Reading = ', newReading);
   },
 };
 
