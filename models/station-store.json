@@ -1,73 +1,10 @@
 {
   "stationCollection": [
     {
-      "id": "d2dc4b90-3046-11ed-a0c7-8313427405ef",
+      "id": "c595e450-3082-11ed-b1da-098200a6f643",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "title": "Lucan",
-      "latitude": 3.8607,
-      "longitude": 45.0788,
-      "readings": [
-        {
-          "id": "d721e480-3046-11ed-a0c7-8313427405ef",
-          "code": 100,
-          "temp": 200,
-          "windSpeed": 300,
-          "windDirection": 400,
-          "pressure": 500
-        },
-        {
-          "id": "cd49d130-304f-11ed-8a76-59531fbdfab2",
-          "code": 0,
-          "temp": 2,
-          "windSpeed": 0,
-          "windDirection": 0,
-          "pressure": 0
-        }
-      ]
-    },
-    {
-      "id": "e0ae80d0-3046-11ed-a0c7-8313427405ef",
-      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
-      "title": "Leixlip",
-      "readings": [
-        {
-          "id": "e72a81c0-3046-11ed-a0c7-8313427405ef",
-          "code": 600,
-          "temp": 700,
-          "windSpeed": 800,
-          "windDirection": 900,
-          "pressure": 1000
-        }
-      ]
-    },
-    {
-      "id": "80246200-3048-11ed-a0c7-8313427405ef",
-      "userid": "6dfb07a0-3048-11ed-a0c7-8313427405ef",
-      "title": "Lauren's Weather Station for Weather Loving",
       "readings": []
-    },
-    {
-      "id": "8a398f40-3048-11ed-a0c7-8313427405ef",
-      "userid": "6dfb07a0-3048-11ed-a0c7-8313427405ef",
-      "title": "Lauren's Weather Station for Weather Loving - West",
-      "readings": [
-        {
-          "id": "a472d100-3048-11ed-a0c7-8313427405ef",
-          "code": 100,
-          "temp": 10,
-          "windSpeed": 20,
-          "windDirection": 1,
-          "pressure": 15
-        },
-        {
-          "id": "b3faa580-3048-11ed-a0c7-8313427405ef",
-          "code": 0,
-          "temp": 0,
-          "windSpeed": 0,
-          "windDirection": 6,
-          "pressure": 0
-        }
-      ]
     }
   ]
 }

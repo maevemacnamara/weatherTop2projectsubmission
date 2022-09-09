@@ -10,6 +10,8 @@ const station = {
     logger.debug('Station id = ' + stationId);
     const viewData = {
       title: 'Station',
+      latitude: 'Latitude',
+      longitude: 'Longitude',
       station: stationStore.getStation(stationId)
     };
     response.render('station', viewData);
