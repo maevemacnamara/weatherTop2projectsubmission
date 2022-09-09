@@ -20,11 +20,20 @@ const stationStore = {
       return this.store.findOneBy(this.collection, {id: id });
     },
     
-    getReading(id, reading) {
+    getReading(id, readingId) {
       const station = this.store.findOneBy(this.collection, { id: id});
-      const readings = stat
+      const readings = station.readings.filter(reading => reading.id == readingId);
+      return readings[0];
     },
   
+    updateReading(reading, updatedReading) {
+      reading.code = updatedReading.code;
+      reading.temp = updatedReading.temp;
+      reading.windSpeed = updatedReading.windSpeed;
+      reading.windDirection = updatedReading.windDirection;
+      reading.pressure = updatedReading.pressure;
+      this.store.save();
+    },
   
     removeReading(id, readingId) {
         const station = this.getStation(id);
