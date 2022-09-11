@@ -27,9 +27,9 @@ const readingConversions = {
     return weatherIcon.get(code);
   },
   
-  getFarenheit(temp) {
-    const farenheit = (temp * 9/5) +32;
-    return farenheit;
+  getFahrenheit(temp) {
+    const fahrenheit = (temp * 9/5) +32;
+    return fahrenheit;
   },
   
   getBeaufort(windSpeed) {
@@ -129,8 +129,9 @@ const readingConversions = {
   },
   
   getWindChill(temp,windSpeed) {
-    const windChill = 13.12 + (0.6215 * temp) - 11.37(windSpeed^0.16) + (0.3965 * temp)(windSpeed^0.16)
-  },
+    const windChill = 13.12 + (0.6215 * temp) - 11.37(windSpeed^0.16) + (0.3965 * temp)(windSpeed^0.16);
+    return windChill;
+  }
   
 };
 
