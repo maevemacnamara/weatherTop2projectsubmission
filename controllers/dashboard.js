@@ -16,6 +16,7 @@ const dashboard = {
     logger.info('about to render', stationStore.getAllStations());
     response.render("dashboard", viewData);
   },
+  
 
   deleteStation(request,response) {
     const stationId = request.params.id;
