@@ -1,10 +1,6 @@
 // conversions peformed upon data entered/saved
 const readingConversions = {
   
-  getFarenheit(temp) {
-    return (temp * 9/5) +32;
-  },
-  
   getWeatherCode(code) {
     const weatherCode = new Map();
     weatherCode.set('100', 'Clear');
@@ -29,7 +25,28 @@ const readingConversions = {
     weatherIcon.set('700', 'large circular coloured snowflake icon');
     weatherIcon.set('800', 'large circular coloured white poo storm icon');
     return weatherIcon.get(code);
-  }
+  },
+  
+  getFarenheit(temp) {
+     (temp * 9/5) +32;
+    return fahrenheit;
+  },
+  
+  getBeaufort(windSpeed) {
+    let beaufort;
+    switch(true) {
+      case windSpeed <2 && windSpeed >0:
+        beaufort = 0;
+        break; 
+      case windSpeed <6 && windSpeed > 1:
+        beaufort = 1;
+        break;
+      case windSpeed <20 && windSpeed > 5:
+        beaufort = 2
+        break;
+      case windSpeed <39
+    }
+  },
   
 };
 
