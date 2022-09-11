@@ -28,23 +28,44 @@ const readingConversions = {
   },
   
   getFarenheit(temp) {
-     (temp * 9/5) +32;
-    return fahrenheit;
+    const farenheit = (temp * 9/5) +32;
+    return farenheit;
   },
   
   getBeaufort(windSpeed) {
     let beaufort;
     switch(true) {
-      case windSpeed <2 && windSpeed >0:
+      case windSpeed < 2 && windSpeed > 0:
         beaufort = 0;
         break; 
-      case windSpeed <6 && windSpeed > 1:
+      case windSpeed < 6 && windSpeed > 1:
         beaufort = 1;
         break;
-      case windSpeed <20 && windSpeed > 5:
-        beaufort = 2
+      case windSpeed < 12 && windSpeed > 5:
+        beaufort = 2;
         break;
-      case windSpeed <39
+      case windSpeed < 20 && windSpeed > 11:
+        beaufort = 3;
+        break;
+      case windSpeed < 29 && windSpeed > 19:
+        beaufort = 4;
+        break;
+      case windSpeed < 39 && windSpeed > 28:
+        beaufort = 5;
+        break;
+      case windSpeed < 50 && windSpeed > 38:
+        beaufort = 6;
+        break;
+      case windSpeed < 62 && windSpeed > 49:
+        beaufort = 7;
+        break;
+      case windSpeed < 75 && windSpeed < 61:
+        beaufort = 8;
+        break;
+      case windSpeed < 89 && windSpeed < 74:
+        beaufort = 9;
+        break;
+      case windSpeed < 102 && 
     }
   },
   
