@@ -17,6 +17,18 @@ const readingConversions = {
     return weatherCode.get(code);
   },
   
+  getWeatherIcon(code) {
+    const weatherIcon = new Map();
+    weatherIcon.set('100', 'large circular coloured white sun icon');
+    weatherIcon.set('200', 'large circular coloured white cloud sun icon');
+    weatherIcon.set('300', 'large circular coloured white cloud icon');
+    weatherIcon.set('400', 'large circular coloured white clod sun rain icon');
+    weatherIcon.set('500', 'large circular coloured white cloud showers heavy icon');
+    weatherIcon.set('600', 'large circular coloured white cloud rain icon');
+    weatherIcon.set('700', 'large circular coloured snowflake icon');
+    weatherIcon.set('800', 'large circular coloured white poo storm icon');
+    return weatherIcon.get(code);
+  }
   
 };
 
