@@ -1,24 +1,30 @@
 {{> welcomemenu id="signup"}}
-
-<form class="ui stacked segment form" action="/register" method="POST">
-  <h3 class="ui header">Register</h3>
-  <div class="two fields">
-    <div class="field">
-      <label>First Name</label>
-      <input placeholder="First Name" type="text"  name="firstName">
-    </div>
-    <div class="field">
-      <label>Last Name</label>
-      <input placeholder="Last Name" type="text"  name="lastName">
-    </div>
+<div class ="ui two column middle aligned grid basic segment">
+  <div class="column">
+  <form class="ui stacked segment form" action="/register" method="POST">
+      <h3 class="ui header">Register</h3>
+      <div class="two fields">
+        <div class="field">
+          <label>First Name</label>
+          <input placeholder="First Name" type="text"  name="firstName">
+        </div>
+        <div class="field">
+          <label>Last Name</label>
+          <input placeholder="Last Name" type="text"  name="lastName">
+        </div>
+      </div>
+      <div class="field">
+        <label>Email</label>
+        <input placeholder="Email" type="text" name="email">
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input type="password" name="password">
+      </div>
+      <button class="ui blue submit button">Submit</button>
+  </form>
   </div>
-  <div class="field">
-    <label>Email</label>
-    <input placeholder="Email" type="text" name="email">
-  </div>
-  <div class="field">
-    <label>Password</label>
-    <input type="password" name="password">
-  </div>
-  <button class="ui blue submit button">Submit</button>
-</form>
+<div class="column">
+        <img class="ui image" src="https://cdn.glitch.global/0bd7d6e2-3030-4dca-9bc2-05040912a1fc/weatherpic.jpg?v=1662893973911">
+</div>
+</div>
