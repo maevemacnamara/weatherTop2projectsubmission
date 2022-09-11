@@ -77,7 +77,7 @@ const readingConversions = {
   getCompass(windDirection) {
     let compass;
     switch(true) {
-      case windDirection > 0 && windDirection < 11.24:
+      case windDirection > 0 && windDirection < 11.25:
         compass ='N';
         break;
       case windDirection > 11.24 && windDirection < 33.75:
@@ -92,11 +92,45 @@ const readingConversions = {
       case windDirection > 78.74&& windDirection < 101.25:
         compass ='E';
         break;
-      case windDirection > && windDirection < :
-        compass ='';
+      case windDirection > 101.24 && windDirection < 123.75:
+        compass ='ESE';
+        break;
+      case windDirection > 123.74 && windDirection < 146.25:
+        compass ='SE';
+        break;
+      case windDirection > 146.24 && windDirection < 168.75:
+        compass ='SSE';
+        break;
+      case windDirection > 168.74 && windDirection < 191.25:
+        compass ='S';
+        break;
+      case windDirection > 191.24 && windDirection < 213.75:
+        compass ='SSW';
+        break;
+      case windDirection > 213.74 && windDirection < 236.25:
+        compass ='SW';
+        break;
+      case windDirection > 236.24 && windDirection < 258.75:
+        compass ='WSW';
+        break;
+      case windDirection > 258.74 && windDirection < 281.25:
+        compass ='W';
+        break;
+      case windDirection > 281.24 && windDirection < 303.75:
+        compass ='WNW';
+        break;
+      case windDirection > 303.74 && windDirection < 326.25:
+        compass ='NW';
+        break;
+      case windDirection > 326.24 && windDirection < 348.75:
+        compass ='NNW';
         break;
     }
-  }
+  },
+  
+  getWindChill(temp,windSpeed) {
+    const windChill = 13.12 + (0.6215 * temp) - 11.37(windSpeed^0.16) + (0.3965 * temp)(windSpeed^0.16)
+  },
   
 };
 
