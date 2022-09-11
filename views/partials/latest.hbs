@@ -6,20 +6,20 @@
         </div>
         <div class="column">
             <p>Weather <i class="big red cloud sun icon"></i></p>
-            <p>{{code}}, {{weatherIcon}}</p>
+            <p>{{station.code}}, {{weatherIcon}}</p>
         </div>
         <div class="column">
             <p>Temperature <i class="big blue temperature low icon"></i></p>
-            <p>{{temp}} C<br> {{fahrenheit}} F</p>
+            <p>{{latestReading.temp}} C<br> {{latestReading.fahrenheit}} F</p>
         </div>
         <div class="column">
             <p>Wind <i class="big green wind icon"></i></p>
-            <p>{{beaufort}} bft<br>{{compassDirection}}<br>
-                Feels like<br>{{windChill}}</p>
+            <p>{{latestReading.beaufort}} bft<br>{{latestReading.compassDirection}}<br>
+                Feels like<br>{{latestReading.windChill}}</p>
         </div>
         <div class="column">
             <p>Pressure <i class="big orange arrows alternate icon"></i></p>
-            <p>{{pressure}} hPa</p>
+            <p>{{latestReading.pressure}} hPa</p>
         </div>
     </div>
 </div>
