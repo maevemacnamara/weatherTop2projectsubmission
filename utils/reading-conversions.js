@@ -59,15 +59,44 @@ const readingConversions = {
       case windSpeed < 62 && windSpeed > 49:
         beaufort = 7;
         break;
-      case windSpeed < 75 && windSpeed < 61:
+      case windSpeed < 75 && windSpeed > 61:
         beaufort = 8;
         break;
-      case windSpeed < 89 && windSpeed < 74:
+      case windSpeed < 89 && windSpeed > 74:
         beaufort = 9;
         break;
-      case windSpeed < 102 && 
+      case windSpeed < 102 && windSpeed > 88:
+        beaufort = 10;
+        break;
+      case windSpeed < 118 && windSpeed > 101:
+        beaufort = 11;
+        break;
     }
   },
+  
+  getCompass(windDirection) {
+    let compass;
+    switch(true) {
+      case windDirection > 0 && windDirection < 11.24:
+        compass ='N';
+        break;
+      case windDirection > 11.24 && windDirection < 33.75:
+        compass = 'NNE';
+        break;
+      case windDirection > 33.74 && windDirection < 56.25:
+        compass ='NE';
+        break;
+      case windDirection > 56.24 && windDirection < 78.75:
+        compass ='ENE';
+        break;
+      case windDirection > 78.74&& windDirection < 101.25:
+        compass ='E';
+        break;
+      case windDirection > && windDirection < :
+        compass ='';
+        break;
+    }
+  }
   
 };
 
