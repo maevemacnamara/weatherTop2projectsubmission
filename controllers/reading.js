@@ -21,7 +21,7 @@ const reading = {
     const readingId = request.params.readingid;
     const reading = stationStore.getReading(stationId, readingId)
     const newReading = {
-      code: request.body.code,
+      code: Number(request.body.code),
       temp: Number(request.body.temp),
       windSpeed: Number(request.body.windSpeed),
       windDirection: Number(request.body.windDirection),
