@@ -42,7 +42,8 @@ const accounts = {
 
   authenticate(request, response) {
     const user = userstore.getUserByEmail(request.body.email);
-    if (user) {
+    const password = userstore.checkPassword(request.body.password);
+    if ((user)&&(password)) {
       response.cookie('playlist', user.email);
       logger.info(`logging in ${user.email}`);
       response.redirect('/dashboard');
@@ -54,7 +55,9 @@ const accounts = {
   getCurrentUser(request) {
     const userEmail = request.cookies.playlist;
     return userstore.getUserByEmail(userEmail);
-  },
-};
+  }
+}
+  
+  
 
 module.exports = accounts;

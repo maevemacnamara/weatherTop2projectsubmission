@@ -12,7 +12,8 @@ const station = {
       title: 'Station',
       latitude: 'Latitude',
       longitude: 'Longitude',
-      station: stationStore.getStation(stationId)
+      station: stationStore.getStation(stationId),
+      
     };
     response.render('station', viewData);
   },

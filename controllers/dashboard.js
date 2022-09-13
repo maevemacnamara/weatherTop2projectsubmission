@@ -18,20 +18,20 @@ const dashboard = {
     response.render("dashboard", viewData);
   },
 
-  updateWeather(station){
-    let latestReading = null;
-    if (station.readings.length > 0) {
-      latestReading = station.readings[station.readings - 1];
-      station.code = latestReading.code;
-      station.weather = readingConversions.weatherCode.get(latestReading.code);
-      station.icon = readingConversions.weatherIcon.get(latestReading.code)
-      station.temp = latestReading.temp;
-      station.fahrenheit = readingConversions.fahrenheit(latestReading.temp);
-      station.windBft = readingConversions.beaufort(latestReading.windSpeed);
-      station.windChill = readingConversions.windChill(latestReading.temp, latestReading.windSpeed);
-      station.pressure = readingConversions.pressure;
-    }
-  },
+  // updateWeather(station){
+  //   let latestReading = null;
+  //   if (station.readings.length > 0) {
+  //     latestReading = station.readings[station.readings - 1];
+  //     station.code = latestReading.code;
+  //     station.weather = readingConversions.weatherCode.get(latestReading.code);
+  //     station.icon = readingConversions.weatherIcon.get(latestReading.code)
+  //     station.temp = latestReading.temp;
+  //     station.fahrenheit = readingConversions.fahrenheit(latestReading.temp);
+  //     station.windBft = readingConversions.beaufort(latestReading.windSpeed);
+  //     station.windChill = readingConversions.windChill(latestReading.temp, latestReading.windSpeed);
+  //     station.pressure = readingConversions.pressure;
+  //   }
+  // },
 
   deleteStation(request,response) {
     const stationId = request.params.id;

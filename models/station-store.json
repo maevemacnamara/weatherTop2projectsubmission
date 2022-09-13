@@ -5,6 +5,23 @@
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "title": "Lucan",
       "readings": []
+    },
+    {
+      "id": "9e2ad650-3393-11ed-84cf-29aca5115bb0",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Leixlip",
+      "latitude": 23,
+      "longitude": 23,
+      "readings": [
+        {
+          "id": "a4b83c60-3393-11ed-84cf-29aca5115bb0",
+          "code": null,
+          "temp": 100,
+          "windSpeed": 100,
+          "windDirection": 100,
+          "pressure": 100
+        }
+      ]
     }
   ]
 }
