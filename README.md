@@ -12,6 +12,8 @@ Web App: Weather At Your Fingertips
 
 This web application is called Weather At Your Fingertips, and it is the companion web app to the WeatherTop 1000 device. Please see information below for accessing and using the web app.
 
+Programme: This project is written in javascript. Handling is done with gitnore & handlebars. The project was created with glitch and the project was been cloned to this repository.
+
 LOGIN: One must be signed in the view the dashboard page; you can register an account on the signup page or you may use one of the two preset accounts on the system, there details are as follows:
 
 Preset account: <br>Email: homer@simpson.com <br> Password: secret
