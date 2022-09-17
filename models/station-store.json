@@ -4,22 +4,41 @@
       "id": "c595e450-3082-11ed-b1da-098200a6f643",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "title": "Lucan",
-      "readings": []
+      "latitude": 53.35698596439443,
+      "longitude": -6.463254736746753,
+      "readings": [
+        {
+          "id": "53606880-3689-11ed-af5f-47b2942f48bf",
+          "code": 800,
+          "temp": 1,
+          "windSpeed": 4,
+          "windDirection": 220,
+          "pressure": 1001
+        },
+        {
+          "id": "6b67d620-3689-11ed-af5f-47b2942f48bf",
+          "code": 600,
+          "temp": 6,
+          "windSpeed": 2,
+          "windDirection": 200,
+          "pressure": 1004
+        }
+      ]
     },
     {
       "id": "9e2ad650-3393-11ed-84cf-29aca5115bb0",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "title": "Leixlip",
-      "latitude": 23,
-      "longitude": 23,
+      "latitude": 53.36492006250444,
+      "longitude": -6.4887387518172615,
       "readings": [
         {
-          "id": "a4b83c60-3393-11ed-84cf-29aca5115bb0",
-          "code": null,
-          "temp": 100,
-          "windSpeed": 100,
-          "windDirection": 100,
-          "pressure": 100
+          "id": "7c64e580-3689-11ed-af5f-47b2942f48bf",
+          "code": 700,
+          "temp": 8,
+          "windSpeed": 1,
+          "windDirection": 90,
+          "pressure": 1000
         }
       ]
     }
