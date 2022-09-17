@@ -14,8 +14,7 @@ This web application is called Weather At Your Fingertips, and it is the compani
 
 LOGIN: One must be signed in the view the dashboard page; you can register an account on the signup page or you may use one of the two preset accounts on the system, there details are as follows:
 
-Preset account:
-Email: homer@simpson.com <br> Password: secret
+Preset account: <br>Email: homer@simpson.com <br> Password: secret
 
 DASHBOARD: The display calls any preloaded stations associated with the active account. Readings for each station can be accessed by selecting the folder icon within the segment. The station can also be deleted by selecting the trash can icon located beside the folder icon.
 
