@@ -6,7 +6,24 @@
       "title": "Lucan",
       "latitude": 53.35698596439443,
       "longitude": -6.463254736746753,
-      "readings": []
+      "readings": [
+        {
+          "id": "42361cb0-368b-11ed-8fc1-67255dad6593",
+          "code": 800,
+          "temp": 1,
+          "windSpeed": 4,
+          "windDirection": 220,
+          "pressure": 1001
+        },
+        {
+          "id": "4be471d0-368b-11ed-8fc1-67255dad6593",
+          "code": 600,
+          "temp": 6,
+          "windSpeed": 2,
+          "windDirection": 200,
+          "pressure": 1004
+        }
+      ]
     },
     {
       "id": "9e2ad650-3393-11ed-84cf-29aca5115bb0",
@@ -16,12 +33,20 @@
       "longitude": -6.4887387518172615,
       "readings": [
         {
-          "id": "a4b83c60-3393-11ed-84cf-29aca5115bb0",
-          "code": null,
-          "temp": 100,
-          "windSpeed": 100,
-          "windDirection": 100,
-          "pressure": 100
+          "id": "55acb790-368b-11ed-8fc1-67255dad6593",
+          "code": 700,
+          "temp": 8,
+          "windSpeed": 1,
+          "windDirection": 90,
+          "pressure": 1000
+        },
+        {
+          "id": "6cdcd800-368b-11ed-8fc1-67255dad6593",
+          "code": 200,
+          "temp": 1,
+          "windSpeed": 3,
+          "windDirection": 120,
+          "pressure": 999
         }
       ]
     }

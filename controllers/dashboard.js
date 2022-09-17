@@ -4,7 +4,7 @@ const logger = require("../utils/logger");
 const stationStore = require("../models/station-store");
 const uuid = require("uuid");
 const accounts = require("./accounts.js");
-const stationAnalytics = require("../utils/station-analytics");
+//const stationAnalytics = require("../utils/station-analytics");
 
 const dashboard = {
   index(request, response) {
